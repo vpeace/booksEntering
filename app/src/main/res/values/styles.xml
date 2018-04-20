@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="ToolbarShadow.Compat" parent="@style/ToolbarShadow">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="ToolbarShadow">
+        <item name="android:background">@drawable/bg_toolbar_elevation_compat</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">4.0dip</item>
+        <item name="android:layout_below">@id/toolbar</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ToolbarStyle" parent="@style/ToolbarStyleElevation">
+        <item name="android:theme">@style/ToolbarTheme</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/Toolbar.TitleText</item>
+        <item name="subtitleTextAppearance">@style/Toolbar.SubtitleText</item>
+    </style>
+    <style name="ToolbarStyleElevation" />
+    <style name="Toolbar.TitleText.FontFamily" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <style name="h_block">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Toolbar.SubtitleText.FontFamily" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <style name="Toolbar.TitleText" parent="@style/Toolbar.TitleText.FontFamily">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+    <style name="Toolbar.SubtitleText" parent="@style/Toolbar.SubtitleText.FontFamily">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/ola_text_pitch_black_56</item>
+    </style>
+    <style name="ToolbarStyle.NoShadow" parent="@style/ToolbarStyle.NoElevation" />
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="colorControlNormal">@color/ola_text_pitch_black_56</item>
+        <item name="colorControlHighlight">@color/color_control_highlight</item>
+    </style>
+    <style name="ToolbarStyle.NoElevation" parent="@style/ToolbarStyle" />
+</resources>
